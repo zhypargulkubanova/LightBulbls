@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+
+
+ .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: rgb(147, 230, 144);
+  color: rgb(0, 0, 0);
+  text-align: center;
+ 
+  border-radius: 6px;
+  padding: 8px 0;
+  margin: 50px;
+  position: fixed;
+  top: 15px;
+  right: 500px;
+  width: 400px;
+  height: 150px;
+}
+
+
+.popuptext1 {
+  visibility: hidden;
+  width: 1200px;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: rgb(107, 109, 245);
+  color: rgb(0, 0, 0);
+  text-align: center;
+ 
+  border-radius: 6px;
+
+
+  position: fixed;
+  top: 15px;
+  right: 100px;
+  left: 70px;
+  top: 15px;
+
+  height: 600px;
+}
+
+
+.popuptext2 {
+  visibility: hidden;
+  width: 160px;
+  background-color: rgb(247, 82, 82);
+  color: rgb(0, 0, 0);
+  text-align: center;
+ 
+  border-radius: 6px;
+  padding: 8px 0;
+  margin: 50px;
+  position: fixed;
+  top: 15px;
+  right: 500px;
+  width: 400px;
+  height: 150px;
+}
+
+
+
+.show {
+  visibility: visible;
+  
+}
+.hide {
+  visibility: hidden;
+  
+}
+
+
+    body{
+        background-color: rgb(173, 192, 255);
+    }
+    table {
+        
+        table-layout: fixed;
+        overflow: hidden;
+        width: 100%;
+        
+    }
+    .white12 {
+        background-color: #ffffff;
+    }
+    form {
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+    .result {
+        visibility: hidden;
+    }
+    .nameInput {
+        text-align: center;
+    }
+        table.fortb
+    {
+    table-layout: fixed;
+
+	width: 300px;
+	border-collapse:collapse;
+	border-spacing:0;
+	height: 300px;
+    text-align: center;
+    margin-left: 460px;
+    margin-top: 30px;
+    background-color: #ffffff;
+}
+/* Medium devices */
+
+@media (min-width: 768px) {}
+
+/* Large devices */
+
+@media (min-width: 992px) {}
+
+/*Ipad pro view*/
+
+
+
+/* Extra Large devices */
+
+@media (min-width: 1200px) {}
+
+table.fortb,table.fortb td, table.fortb th {
+	border: 1px solid #595959;
+}
+table.fortb td,table.fortb th {
+
+	width: 20px;
+	height: 20px;
+}
+table.fortb th {
+    overflow: hidden;
+	background: #ffffff; 
+	color: rgb(255, 251, 251); 
+	font-weight: normal;
+}
+.forblack {
+    background-color:#000000
+}
+.newStyle::before {
+    background-image: url("img.png");
+    background-repeat: no-repeat;
+    content: "💡";
+
+width: 20px;
+font-size: 10px;
+
+    
+    }
+    .newStyle {
+        background-color: #faf87d;
+    }
+    .btn_restart {
+        width: 200px;
+        height: 30px;
+        text-align: center;
+        background-color: rgb(255, 252, 57);
+        margin-left: 380px;
+
+    }
+    .finishButton {
+        width: 200px;
+        height: 30px;
+        text-align: center;
+        background-color: green;
+        margin-left: 40px;
+    }
+    .yourname {
+        margin-left: 570px;
+
+    }
+    .timer {
+        margin-left: 500px;
+        visibility: visible;
+    }
+    .startGame {
+        width: 200px;
+        height: 40px;
+        margin-left: 10px;
+        background-color: #faf87d;
+    }
+    .restartGame {
+        width: 200px;
+        margin-top: 15px;
+        background-color: rgb(255, 231, 95);
+    }
+    
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table class="fortb" id="table1" width="200" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td class="white1" id="cl1"></td>
+                <td class="white1" id="cl2"></td>
+                <td class="white1" id="cl3"></td>
+                <td class="forblack" style="color: #ffffff;" id="cl4">1</td>
+                <td class="white1" id="cl5"></td>
+                <td class="white1" id="cl6"></td>
+                <td class="white1" id="cl7"></td>
+            </tr>
+            <tr>
+                <td class="white1" id="cl8"></td>
+                <td class="forblack" style="color: #ffff;" id="cl9">0</td>
+                <td class="white1" id="cl10"></td>
+                <td class="white1" id="cl11"></td>
+                <td class="white1" id="cl12"></td>
+                <td class="forblack" style="color: #ffff;" id="cl13">2</td>
+                <td class="white1" id="cl14"></td>
+            </tr>
+            <tr>
+                <td class="white1" id="cl15"></td>
+                <td class="white1" id="cl16"></td>
+                <td class="white1" id="cl17"></td>
+                <td class="white1" id="cl18"></td>
+                <td class="white1" id="cl19"></td>
+                <td class="white1" id="cl20"></td>
+                <td class="white1" id="cl21"></td>
+            </tr>
+            <tr>
+                <td class="forblack" id="cl22"></td>
+                <td class="white1" id="cl23"></td>
+                <td class="white1" id="cl24"></td>
+                <td class="forblack" id="cl25"></td>
+                <td class="white1" id="cl26"></td>
+                <td class="white1" id="cl27"></td>
+                <td class="forblack" id="cl28"></td>
+            </tr>
+            <tr>
+                <td class="white1" id="cl29"></td>
+                <td class="white1" id="cl30"></td>
+                <td class="white1" id="cl31"></td>
+                <td class="white1" id="cl32"></td>
+                <td class="white1" id="cl33"></td>
+                <td class="white1" id="cl34"></td>
+                <td class="white1" id="cl35"></td>
+            </tr>
+            <tr>
+                <td class="white1" id="cl36"></td>
+                <td class="forblack" id="cl37"></td>
+                <td class="white1" id="cl38"></td>
+                <td class="white1" id="cl39"></td>
+                <td class="white1" id="cl40"></td>
+                <td class="forblack" style="color: #ffff;" id="cl41">2</td>
+                <td class="white1" id="cl42"></td>
+            </tr>
+            <tr>
+                <td class="white1" id="cl43"></td>
+                <td class="white1" id="cl44"></td>
+                <td class="white1" id="cl45"></td>
+                <td class="forblack" style="color: #ffff;" id="cl46">3</td>
+                <td class="white1" id="cl47"></td>
+                <td class="white1" id="cl48"></td>
+                <td class="white1" id="cl49"></td>
+            </tr>
+        </tbody>
+    </table>
+    <form id="form">
+      </form>
+      <p id="demo" class="yourname">Name of a player: </p>
+      <br>
+      <div id="secondsCounter" class="timer">Time elapsed in seconds: </div>
+      <div id="secondsCounter2" class="timer">Time elapsed in seconds: </div>
+      <div id="secondsCounter3" class="timer">Time elapsed in seconds: </div>
+      <div id="secondsCounter4" class="timer">Time elapsed in seconds: </div>
+      <br><br>
+      <button type="submit" id="resetButton" class="btn_restart">Restart the game</button>
+
+      <button type="submit" id="finishButton" class="finishButton" onclick="end()">FINISH</button>
+      <div class="popup">
+        <span class="popuptext" id="myPopup">You won!<br> Congratulations! <br>
+            <br>
+            <br>
+            <br>
+            Click here to start the game again!
+            <br><button type="submit" id="restartGame1" class="restartGame" onclick="start()">Re-start the game</button>
+        </span>
+        </div>
+
+      <div class="popup2">
+        <span class="popuptext2" id="myPopup2">Wrong!<br> Unfortunately wrong solution! <br>
+            <br>
+            <br>
+            <br>
+            Click here to start the game again!
+            <br><button type="submit" id="restartGame1" class="restartGame" onclick="start()">Re-start the game</button></span></div>
+      
+        <div class="popup1">
+            
+                <span class="popuptext1" id="myPopup1"><img src="img.png" alt="">
+                    <br><b>Light bulbs placement</b><br>Once upon a time, King Unnamed of Nowhereland was both smiling and crying at the same time.
+                     He was smiling because his enormous brand-new palace with many spacious rooms and corridors has just been finished. He is also crying as these rooms need to be illuminated and kept warm, but the ongoing increase of utility costs affect him as well.
+                     So now it's time to think about the placement of the palace's light bulbs.
+                     We need to place them so that everything is properly lit, but we cannot install any unnecessary bulbs.<br>
+                    <br>
+                    <br>
+                    <br>
+                    <form id="form">
+                        Enter your name:<input type="text" id="myText" value="" class="nameInput">
+                        <br>
+                        <br>
+    
+    
+                      </form>
+                      <button type="submit" id="startGame" class="startGame" onclick="start()">Start the game</button>
+                    </span>
+                    
+                
+                </div>
+
+
+
+   
+</body>
+<script src="script.js">
+    
+</script>
+</html>
